@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>映画探訪</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Zen Kaku Gothic -->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+
+    <!-- Murecho -->
+    <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@300&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/sanitize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous-basic.min.css">
+    <link rel="stylesheet" href="MovieApp2.css">
+</head>
+<body>
+    <p class="title">映画探訪</p>
+    
+    <!-- 選択肢 -->
+    <input type="button" class="button">
+    <input type="button" class="button">
+
+
+    <!--  ボタンを押すと、ランダムに画像を表示 -->
+    <br>
+    <br>
+    <input type="button" value="自分にぴったりの映画を見つける" id="hougaImage">
+    <img id="img_place" class="poster example_gallery">
+
+
+    <!-- 共有ボタン -->
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">　Tweet</a>
+
+    <!-- JavaScript -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
+    <script src="MovieApp2.js"></script>
+</body>
+</html>

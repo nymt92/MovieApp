@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>映画探訪</title>
+    <meta name="description" content="This site is a test site.">
+    <link rel="icon" href="MovieAppImage/movie.jpg">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Zen Kaku Gothic -->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+
+    <!-- Murecho -->
+    <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@300&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/sanitize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous-basic.min.css">
+    <link rel="stylesheet" href="MovieApp.css">
+</head>
+<body>
+    <p class="title">映画探訪</p>
+    
+    <p class="letter">簡単な質問に答えるだけで、おすすめのマイナー映画を紹介します</p>
+    <p class="use">使い方</p>
+    <p class="letter">複数の質問に答え、あなたにピッタリの映画を見つけましょう</p>
+    
+    
+
+    <!-- 検索フォーム -->
+    <!-- <div class="spacer">
+        <form action="#" id="form" method="get">
+            <input type="text" class="search_input" autocomplete="off" name="search"  placeholder="キーワードを入力" size="60">
+            <input type="submit" class="search_button" value="検索">
+            <input type="image" src="WebAppImage/108024.jpg" width="30" height="30" class="search_button" value="検索">
+        </form>
+    </div> -->
+
+    <!-- 検索条件の変更画面 -->
+    <!--<details>
+        <summary id="search_plus">早速探してみる</summary>
+            <form id="search_condition">
+                <p> 表示する期間<br>
+                <input type="radio" name="span" value="１日">１日 <br>
+                <input type="radio" name="span" value="１週間">１週間(７日) 
+                <input type="radio" name="span" value="１ヶ月間"  checked>１ヶ月間(３０日) 
+                <input type="radio" name="span" value="１年間">１年間(３６５日) 
+            </form>
+
+            <form action="#" id="form" method="get"> 
+                <input type="text" class="searh_input" autocomplete="off" name="search" placeholder="比較したいキーワードを入力" size="50">
+                <input type="submit" id="search_button2" value="比較する">
+            </form>
+    </details> -->
+
+    <!-- HTML2に移動する -->
+    <input type="button" class="button" id="idou" onclick="location.href='MovieApp2.html'" value="早速探してみる">
+    <br>
+    <br>
+    <br>
+
+
+    <!-- 共有ボタン -->
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">　Tweet</a>
+
+    <!-- トレンド情報 -->
+    <a class="letter">最近のトレンド (<a class="letter" id="today"></a><a class="letter">更新)
+
+    </a>
+
+
+    <!-- ランダムに出現させる 
+    <a class="example_gallery randomMovie" href="MovieAppImage/tubaki.jpg">
+        <img src="MovieAppImage/tubaki.jpg" class="example">
+    </a>
+    <a class="example_gallery randomMovie" href="MovieAppImage/kuruizaki.jpg">
+        <img src="MovieAppImage/kuruizaki.jpg" class="example">
+    </a>
+    <a class="example_gallery randomMovie" href="MovieAppImage/houga3.jpg">
+        <img src="MovieAppImage/houga3.jpg" class="example">
+    </a> -->
+    
+    <!-- オススメの映画の入力フォーム -->
+    <details>
+        <summary class="osusume letter">あなたのオススメの映画を教えてください</summary>
+        <form class="osusume_form" method="post" action="Destination.html">
+            <!-- 公開か非公開か選択する -->
+            <input type="radio" name="public" value="piublic">公開
+            <input type="radio" name="public" value="private"> 非公開
+            <p>映画のタイトル</p>
+            <input type="text">
+            <p>ポスターなどの画像</p>
+            <input type="file">
+            <p>あらすじ、感想など</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <!-- 送信ボタン -->
+            <p> <input type="submit" value="送信する"> </p>
+        </form>
+    </details>
+
+    <!-- JavaScript -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
+    <script src="MovieApp.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+body {
+    /*font-family: 'Zen Kaku Gothic Antique', sans-serif; */
+    font-family: 'Murecho', sans-serif;
+    padding: 50px;
+    height: 2500px;
+    width: 1000px;
+    background-color: aliceblue;
+}
+
+.title {
+    position: relative;
+    font-size: 40px;
+}
+
+.icon {
+    width: 5.5%;
+    position: relative;
+    top: -97px;
+    left: 345px;
+}
+
+.button {
+    width: 120px;
+}
+
+#idou {
+    font-size: 17px;
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    top: 500px;
+    left: 400px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+#idou:hover {
+    transition: 0.15s;
+    transform: scale(0.98);
+}
+
+.use {
+    position: relative;
+    font-size: 25px;
+}
+
+.letter {
+    font-size: 20px;
+    line-height: 20pxpx;
+}
+
+.search_input {
+    padding: 3px;
+    border-radius: 4px;
+    opacity: 85%;
+}
+
+.search_button {
+    width: 54px;
+    height: 28px;
+    position: absolute;
+    top: 375px;
+    left: 500px;
+    border-radius:3px;
+    background:#7fbfff; 
+    border:none;/*検索ボタンの枠線を消す*/ 
+    color:#fff;/*検索ボタンのテキストカラー*/ 
+    font-weight:bold;/*検索ボタンのテキスト太字*/ 
+    font-size:16px;/*検索ボタンのフォントサイズ*/ 
+}
+
+/*検索ボタンにカーソルを合わせたら、色を変える*/
+.search_button:hover {
+    transition: 0.2s;
+    transform: scale(1.05);
+    color: #666;
+}
+
+#search_plus {
+    border-radius: 3px;
+    line-height: 30px;
+}
+
+#search_button2 {
+    width: 74px;
+    height: 28px;
+    position: absolute;
+    top: 534px; 
+    left: 432px;
+    border-radius:3px;
+    background:#7fbfff;/*検索ボタンの背景カラー*/ 
+    border:none;/*検索ボタンの枠線を消す*/ 
+    color:#fff;/*検索ボタンのテキストカラー*/ 
+    font-weight:bold;/*検索ボタンのテキスト太字*/ 
+    font-size:16px;/*検索ボタンのフォントサイズ*/ 
+}
+
+#search_button2:hover {
+    transition: 0.2s;
+    transform: scale(1.05);
+    color: #666;
+}
+
+#search_plus {
+    width: 200px;
+    height: 30px;
+    
+    display: flex;
+    font-size: 15px;
+    border-style: groove;
+}
+
+/* 画像にカーソルを合わせたら、拡大する */
+@media (min-width: 600px) {
+    .poster {
+        display: flex;
+        position: relative;
+        width: 30%; 
+        opacity: 90%;
+        transition: 0.2s;
+    }
+    .poster:hover {
+        transform: scale(1.025);
+    }
+}
+
+.share_button {
+    size: 100px;
+}
+
+.osusume {
+    position: absolute;
+    top: 600px;
+    left: 60px;
+}
+.osusume_form {
+    position: absolute;
+    top: 635px;
+    left: 60px;
+}
